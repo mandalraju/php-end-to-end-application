@@ -19,7 +19,10 @@
     $row_number = mysqli_num_rows($result);
 
     if($row_number == 1){
-        echo "User logged in!<br>";
+        // Starting the user session (A session is a way to store the information of a validated user globally)
+        session_start(); // inbuilt php function to statrt the session of the user.
+        $_SESSION['username'] = $username;
+        header('Location:/admin-dashboard/dashboard.php');
     }else{
         echo "Oppps! The user doesn't exist in the database.<br>";
     }

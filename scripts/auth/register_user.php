@@ -5,9 +5,9 @@
     // Including database connection file
     require("../database/connection.php"); 
 
-    print "<pre>";
-    print_r($_POST);
-    print "</pre>";
+    // print "<pre>";
+    // print_r($_POST);
+    // print "</pre>";
 
     // Storing data from client to variables
     $username = trim($_POST["username"]);
