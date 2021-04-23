@@ -870,12 +870,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Edit User Profile</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Edit User Profile</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -886,7 +886,57 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+         <form action="scripts/auth/insert_user_details.php" method="POST" enctype="multipart/form-data">
+        <div class="input-group mb-3">
+          <input type="text" name="fullname" class="form-control" placeholder="Enter Full Name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" name="address" class="form-control" placeholder="Enter Address">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" name="contact" class="form-control" placeholder="Enter Contact">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" name="age" class="form-control" placeholder="Enter Age">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">Upload Profile Pic.</label>
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" name="profilepic" class="custom-file-input" id="exampleInputFile">                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                </div>
+            </div>
+        </div>
+
         
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
